@@ -1,0 +1,189 @@
+=== Basic SYN Scan ===
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-06-23 15:58 IST
+Nmap scan report for 10.0.2.2
+Host is up (0.0015s latency).
+Not shown: 995 filtered tcp ports (no-response)
+PORT     STATE SERVICE
+135/tcp  open  msrpc
+445/tcp  open  microsoft-ds
+1521/tcp open  oracle
+6646/tcp open  unknown
+8080/tcp open  http-proxy
+MAC Address: 52:55:0A:00:02:02 (Unknown)
+
+Nmap scan report for 10.0.2.3
+Host is up (0.0060s latency).
+Not shown: 999 filtered tcp ports (net-unreach)
+PORT   STATE SERVICE
+53/tcp open  domain
+MAC Address: 52:55:0A:00:02:03 (Unknown)
+
+Nmap scan report for 10.0.2.15
+Host is up (0.0000010s latency).
+All 1000 scanned ports on 10.0.2.15 are in ignored states.
+Not shown: 1000 closed tcp ports (reset)
+
+Nmap done: 256 IP addresses (3 hosts up) scanned in 7.22 seconds
+=== Service Detection ===
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-06-23 15:58 IST
+Nmap scan report for 10.0.2.2
+Host is up (0.0025s latency).
+Not shown: 995 filtered tcp ports (no-response)
+PORT     STATE SERVICE       VERSION
+135/tcp  open  msrpc         Microsoft Windows RPC
+445/tcp  open  microsoft-ds?
+1521/tcp open  oracle-tns    Oracle TNS listener 11.2.0.2.0 (unauthorized)
+6646/tcp open  unknown
+8080/tcp open  http          Oracle XML DB Enterprise Edition httpd
+MAC Address: 52:55:0A:00:02:02 (Unknown)
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Nmap scan report for 10.0.2.3
+Host is up (0.0039s latency).
+Not shown: 999 filtered tcp ports (net-unreach)
+PORT   STATE SERVICE VERSION
+53/tcp open  domain  dnsmasq 2.51
+MAC Address: 52:55:0A:00:02:03 (Unknown)
+
+Nmap scan report for 10.0.2.15
+Host is up (0.0000020s latency).
+All 1000 scanned ports on 10.0.2.15 are in ignored states.
+Not shown: 1000 closed tcp ports (reset)
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 256 IP addresses (3 hosts up) scanned in 161.02 seconds
+=== OS Detection ===
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-06-23 16:00 IST
+Nmap scan report for 10.0.2.2
+Host is up (0.00094s latency).
+Not shown: 995 filtered tcp ports (no-response)
+PORT     STATE SERVICE
+135/tcp  open  msrpc
+445/tcp  open  microsoft-ds
+1521/tcp open  oracle
+6646/tcp open  unknown
+8080/tcp open  http-proxy
+MAC Address: 52:55:0A:00:02:02 (Unknown)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: VoIP adapter|general purpose|bridge|printer
+Running (JUST GUESSING): AT&T embedded (98%), QEMU (94%), Oracle Virtualbox (94%), Slirp (94%), GNU Hurd (88%), Konica Minolta embedded (88%)
+OS CPE: cpe:/a:qemu:qemu cpe:/a:oracle:vm_virtualbox cpe:/a:danny_gasparovski:slirp cpe:/o:gnu:hurd cpe:/h:konicaminolta:7035
+Aggressive OS guesses: AT&T BGW210 voice gateway (98%), QEMU user mode network gateway (94%), Oracle Virtualbox Slirp NAT bridge (94%), GNU Hurd 0.3 (88%), Konica Minolta 7035 printer (88%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 1 hop
+
+Nmap scan report for 10.0.2.3
+Host is up (0.017s latency).
+Not shown: 999 filtered tcp ports (net-unreach)
+PORT   STATE SERVICE
+53/tcp open  domain
+MAC Address: 52:55:0A:00:02:03 (Unknown)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: VoIP adapter|general purpose|bridge|printer
+Running (JUST GUESSING): AT&T embedded (96%), QEMU (95%), Oracle Virtualbox (95%), Slirp (95%), Samsung embedded (87%), Dell embedded (87%), Wind River VxWorks (87%), Xerox embedded (87%)
+OS CPE: cpe:/a:qemu:qemu cpe:/o:oracle:virtualbox cpe:/a:danny_gasparovski:slirp cpe:/h:samsung:clp-315w cpe:/h:dell:1815dn cpe:/o:windriver:vxworks cpe:/h:xerox:workcentre_4150
+Aggressive OS guesses: AT&T BGW210 voice gateway (96%), QEMU user mode network gateway (95%), Oracle Virtualbox Slirp NAT bridge (95%), Samsung CLP-315W printer (87%), Dell 1815dn printer (87%), VxWorks (87%), Xerox WorkCentre 4150 printer (87%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 1 hop
+
+Nmap scan report for 10.0.2.15
+Host is up (0.000053s latency).
+All 1000 scanned ports on 10.0.2.15 are in ignored states.
+Not shown: 1000 closed tcp ports (reset)
+Too many fingerprints match this host to give specific OS details
+Network Distance: 0 hops
+
+OS detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 256 IP addresses (3 hosts up) scanned in 12.44 seconds
+=== Specific Ports ===
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-06-23 16:01 IST
+Nmap scan report for 10.0.2.2
+Host is up (0.00020s latency).
+
+PORT    STATE    SERVICE
+22/tcp  filtered ssh
+80/tcp  filtered http
+443/tcp filtered https
+MAC Address: 52:55:0A:00:02:02 (Unknown)
+
+Nmap scan report for 10.0.2.3
+Host is up (0.00044s latency).
+
+PORT    STATE    SERVICE
+22/tcp  filtered ssh
+80/tcp  filtered http
+443/tcp filtered https
+MAC Address: 52:55:0A:00:02:03 (Unknown)
+
+Nmap scan report for 10.0.2.15
+Host is up (0.000030s latency).
+
+PORT    STATE  SERVICE
+22/tcp  closed ssh
+80/tcp  closed http
+443/tcp closed https
+
+Nmap done: 256 IP addresses (3 hosts up) scanned in 3.51 seconds
+=== Aggressive Scan ===
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-06-23 16:01 IST
+Nmap scan report for 10.0.2.2
+Host is up (0.0016s latency).
+Not shown: 995 filtered tcp ports (no-response)
+PORT     STATE SERVICE       VERSION
+135/tcp  open  msrpc         Microsoft Windows RPC
+445/tcp  open  microsoft-ds?
+1521/tcp open  oracle-tns    Oracle TNS listener 11.2.0.2.0 (unauthorized)
+6646/tcp open  unknown
+8080/tcp open  http          Oracle XML DB Enterprise Edition httpd
+| http-auth: 
+| HTTP/1.1 401 Unauthorized\x0D
+|_  Basic realm=XDB
+|_http-server-header: Oracle XML DB/Oracle Database
+|_http-title: 400 Bad Request
+MAC Address: 52:55:0A:00:02:02 (Unknown)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: VoIP adapter|general purpose|bridge
+Running (JUST GUESSING): AT&T embedded (99%), QEMU (95%), Oracle Virtualbox (94%), Slirp (94%)
+OS CPE: cpe:/a:qemu:qemu cpe:/a:oracle:vm_virtualbox cpe:/a:danny_gasparovski:slirp
+Aggressive OS guesses: AT&T BGW210 voice gateway (99%), QEMU user mode network gateway (95%), Oracle Virtualbox Slirp NAT bridge (94%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 1 hop
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+| smb2-time: 
+|   date: 2025-06-23T10:33:56
+|_  start_date: N/A
+| smb2-security-mode: 
+|   3:1:1: 
+|_    Message signing enabled but not required
+|_clock-skew: 4s
+
+TRACEROUTE
+HOP RTT     ADDRESS
+1   1.59 ms 10.0.2.2
+
+Nmap scan report for 10.0.2.3
+Host is up (0.0011s latency).
+Not shown: 999 filtered tcp ports (net-unreach)
+PORT   STATE SERVICE VERSION
+53/tcp open  domain  dnsmasq 2.51
+MAC Address: 52:55:0A:00:02:03 (Unknown)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Nokia 3600i mobile phone (92%), Cisco Catalyst 1900 switch (89%), QEMU user mode network gateway (89%), Cisco ATA 188 VoIP adapter (88%), Apple Time Capsule NAS device (86%), AT&T BGW210 voice gateway (86%), GNU Hurd 0.3 (85%), Huawei Echolife HG520-series ADSL modem (85%), TP-LINK TD-W8951ND wireless ADSL modem (85%), ZyXEL Prestige 660R ADSL router (85%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 1 hop
+
+TRACEROUTE
+HOP RTT     ADDRESS
+1   1.14 ms 10.0.2.3
+
+Nmap scan report for 10.0.2.15
+Host is up (0.000054s latency).
+All 1000 scanned ports on 10.0.2.15 are in ignored states.
+Not shown: 1000 closed tcp ports (reset)
+Too many fingerprints match this host to give specific OS details
+Network Distance: 0 hops
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 256 IP addresses (3 hosts up) scanned in 185.49 seconds
