@@ -1,6 +1,7 @@
 # Elevate-labs-task-1
 
--Objective
+-Objective:
+
 Using Nmap in Kali Linux to scan the local network and identify open ports on active hosts and using Wireshark to capture and analyze packets during the scan.
 
 -Tools Used
@@ -12,7 +13,9 @@ Tool: Nmap
 Packet Analyzer: Wireshark
 
 -Network Details used
+
 Local IP: 10.0.2.15
+
 Network Range: 10.0.2.0/24
 
 -Files Included
