@@ -4,6 +4,7 @@
 Using Nmap in Kali Linux to scan the local network and identify open ports on active hosts and using Wireshark to capture and analyze packets during the scan.
 
 -Tools Used
+
 OS: Kali Linux 
 
 Tool: Nmap
