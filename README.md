@@ -5,7 +5,9 @@ Using Nmap in Kali Linux to scan the local network and identify open ports on ac
 
 -Tools Used
 OS: Kali Linux 
+
 Tool: Nmap
+
 Packet Analyzer: Wireshark
 
 -Network Details used
