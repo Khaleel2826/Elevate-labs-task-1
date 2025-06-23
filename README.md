@@ -29,7 +29,7 @@ taks1_wireshark.pcapng: Wireshark packet capture taken during Nmap scanning
 
 -Commands Used
 
-1. Basic TCP SYN Scan
+1. Basic TCP SYN Scan                                          
 sudo nmap -sS 10.0.2.0/24
 2. TCP SYN Scan with Service Version Detection
 sudo nmap -sS -sV 10.0.2.0/24
